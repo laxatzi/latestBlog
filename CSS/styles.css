@@ -206,3 +206,11 @@ a.read_more:hover,
 a.read_more:active {
   border: 2px solid var(--color-main-dark);
 }
+
+#wrapper {
+  width: 55%;
+  max-width: 1200px;
+  min-width: 400px;
+  margin: 0 auto;
+  display: block;
+}
