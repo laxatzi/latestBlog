@@ -55,7 +55,6 @@ h6 {
   margin: 0 0 25px;
   padding: 0;
   color: var(--color);
-  font-family: "Rubik", sans-serif;
   vertical-align: baseline;
 }
 
@@ -213,4 +212,7 @@ a.read_more:active {
   min-width: 400px;
   margin: 0 auto;
   display: block;
+}
+main {
+  display: flex;
 }
