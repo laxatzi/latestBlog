@@ -3,10 +3,10 @@
 GENERIC STYLES
 */
 :root {
-  --color: #18171c;
+  --color: #2e353f;
   --color-background: #ffffff;
-  --color-background-alt: #fff7e8;
-  --color-main-dark: #5c64cf;
+  /* --color-background-alt: #fff7e8; */
+  --color-main-dark: #005b99;
   --color-main-light: #f7af24;
 }
 
@@ -29,12 +29,13 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", "Segoe UI", "Helvetica", "Arial" sans-serif;
   font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 1.5;
+  font-size: 1.15rem;
+  text-align: left;
+  vertical-align: baseline;
+  line-height: 1.6;
   background-color: var(--color-background);
-  text-shadow: 0, 2px, 0 rgba(0, 0, 0, 0.07);
   -webkit-overflow-scrolling: touch;
   overflow-x: scroll;
   overflow-y: scroll;
