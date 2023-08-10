@@ -85,11 +85,11 @@ p:last-of-type {
 }
 
 ::-moz-selection {
-  background-color: var(--color-main-lighter);
+  background-color: var(--color-distinct);
 }
 
 ::selection {
-  background-color: var(--color-main-lighter);
+  background-color: var(--color-distinct);
 }
 
 h4 + p {
@@ -109,29 +109,6 @@ a {
 
 a:hover,
 a:focus {
-  text-decoration: underline;
-}
-
-.nav-link a {
-  font-weight: 300;
-  text-decoration: none;
-}
-
-.nav-link a.bold {
-  font-weight: bolder;
-}
-
-a.rev {
-  color: var(--color-main-dark);
-}
-
-a:hover,
-a:focus {
-  text-decoration: underline;
-}
-
-.nav-link a:hover,
-.nav-link a:focus {
   text-decoration: underline;
 }
 
@@ -248,13 +225,13 @@ header {
 }
 
 header menu {
-  border: 1px solid orange;
   flex: 50%;
   justify-content: flex-end;
 }
 
 header menu a {
-  color: var(--color);
+  /* color: var(--color); */
   font-size: 1rem;
-  text-decoration: underline var(--color-main-light) 4px;
+  text-decoration: underline 4px;
+  text-decoration-color: var(--color-main-light);
 }
