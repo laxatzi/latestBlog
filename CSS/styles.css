@@ -195,7 +195,7 @@ a.read_more:active {
 }
 main {
   display: flex;
-  padding-top: 60px;
+  padding: 60px 0;
 }
 
 #p-wrapper {
@@ -225,14 +225,16 @@ header menu {
 }
 
 header menu a,
-#logo a {
+#logo a,
+footer menu a {
   color: var(--color);
   font-size: 1rem;
   text-decoration: underline 4px;
   padding: 5px;
 }
 
-header menu a {
+header menu a,
+footer menu a {
   text-decoration-color: var(--color-main-dark);
 }
 
@@ -243,4 +245,9 @@ header menu a {
 header menu a:hover,
 header menu a:focus {
   text-decoration-color: var(--color-main-light);
+}
+
+footer {
+  border: 2px solid red;
+  padding: 30px 0 0 0;
 }
