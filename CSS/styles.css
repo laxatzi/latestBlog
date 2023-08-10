@@ -6,8 +6,8 @@ GENERIC STYLES
   --color: #2e353f;
   --color-background: #ffffff;
   /* --color-background-alt: #fff7e8; */
-  --color-main-dark: #005b99;
-  --color-main-light: #2d5e7f;
+  --color-main-dark: #026fb7;
+  --color-main-light: #5b8fb5;
   --color-distinct: #f7af24;
 }
 
@@ -224,10 +224,23 @@ header menu {
   align-items: center;
 }
 
-header menu a {
-  /* color: var(--color); */
+header menu a,
+#logo a {
+  color: var(--color);
   font-size: 1rem;
   text-decoration: underline 4px;
-  text-decoration-color: var(--color-main-dark);
   padding: 5px;
+}
+
+header menu a {
+  text-decoration-color: var(--color-main-dark);
+}
+
+#logo a {
+  text-decoration-color: var(--color-distinct);
+  font-weight: 800;
+}
+header menu a:hover,
+header menu a:focus {
+  text-decoration-color: var(--color-main-light);
 }
