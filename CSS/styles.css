@@ -242,12 +242,28 @@ footer menu a {
   text-decoration-color: var(--color-distinct);
   font-weight: 800;
 }
+
 header menu a:hover,
 header menu a:focus {
   text-decoration-color: var(--color-main-light);
 }
 
 footer {
-  border: 2px solid red;
   padding: 30px 0 0 0;
+  display: flex;
+}
+
+footer menu {
+  justify-content: center;
+  align-items: center;
+}
+
+footer menu a::after {
+  content: " \B7 ";
+  display: inline-block;
+  margin-left: 10px;
+}
+
+footer menu a:last-of-type::after {
+  content: "";
 }
