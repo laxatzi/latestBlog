@@ -7,7 +7,8 @@ GENERIC STYLES
   --color-background: #ffffff;
   /* --color-background-alt: #fff7e8; */
   --color-main-dark: #005b99;
-  --color-main-light: #f7af24;
+  --color-main-light: #2d5e7f;
+  --color-distinct: #f7af24;
 }
 
 *,
@@ -222,6 +223,7 @@ a.read_more:active {
 }
 main {
   display: flex;
+  padding-top: 60px;
 }
 
 #p-wrapper {
@@ -231,4 +233,28 @@ main {
 
 img {
   flex: 40%;
+}
+
+header {
+  display: flex;
+  border: 1px solid blue;
+  padding: 10px 0 20px;
+  align-items: center;
+}
+
+#logo {
+  border: 1px solid red;
+  flex: 50%;
+}
+
+header menu {
+  border: 1px solid orange;
+  flex: 50%;
+  justify-content: flex-end;
+}
+
+header menu a {
+  color: var(--color);
+  font-size: 1rem;
+  text-decoration: underline var(--color-main-light) 4px;
 }
