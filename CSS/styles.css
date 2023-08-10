@@ -226,8 +226,9 @@ main {
 
 #p-wrapper {
   min-height: 625px;
+  flex: 60%;
 }
 
 img {
-  /* flex  */
+  flex: 40%;
 }
