@@ -80,6 +80,7 @@ h4 {
 
 #latest-posts h3 a {
   font-weight: 800;
+  font-size: 1.5rem;
 }
 p:first-of-type {
   margin-top: 0;
@@ -180,10 +181,10 @@ span.complement {
 }
 
 a.read_more {
-  margin-top: 40px;
+  margin-top: 20px;
   padding: 5px 10px;
   display: block;
-  width: 15rem;
+  width: 30%;
   text-align: center;
   text-decoration: none;
   background-color: var(--color-distinct);
