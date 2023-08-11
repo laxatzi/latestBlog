@@ -157,10 +157,11 @@ section {
   margin: 50px 0;
 }
 
-#intro {
+.intro {
   font-size: 48px;
   font-weight: 800;
 }
+
 .ion-icon.comp {
   color: var(--color-main-light);
 }
