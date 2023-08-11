@@ -153,7 +153,6 @@ blockquote:before {
 }
 
 section {
-  padding: 50px 17%;
   margin: 0;
 }
 
@@ -203,6 +202,9 @@ main {
   flex: 60%;
 }
 
+.container {
+  width: 70%;
+}
 img {
   flex: 40%;
 }
