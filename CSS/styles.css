@@ -345,6 +345,11 @@ form {
   color: var(--color);
 }
 
+.message,
+.contact-info {
+  margin: 50px 0;
+}
+
 .buttons a:hover {
   background-color: var(--color-distinct-light);
 }
