@@ -319,3 +319,22 @@ form {
 .the-post {
   margin-top: 50px;
 }
+
+.the-project {
+  background-color: #eeeeee;
+  margin-top: 50px;
+  padding: 10px;
+}
+
+.project-title a {
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.project-desc {
+  font-size: 0.85rem;
+}
+
+.buttons a {
+  border: 1px solid red;
+}
