@@ -78,13 +78,19 @@ h4 {
   font-size: 1.25;
 }
 
-#latest-posts h3 a {
+#latest-posts h3 a,
+#posts h3 a {
   font-weight: 800;
   font-size: 1.5rem;
+}
+
+#post-container {
+  width: 75%;
 }
 p:first-of-type {
   margin-top: 0;
 }
+
 p:last-of-type {
   margin-bottom: 0;
 }
