@@ -33,7 +33,7 @@ body {
   padding: 0;
   font-family: Inter, "Segoe UI", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   text-align: left;
   vertical-align: baseline;
   line-height: 1.5;
@@ -308,8 +308,10 @@ input[type="submit"]:hover {
   color: var(--color);
 }
 
-input {
+input,
+textarea {
   padding: 5px 10px;
+  max-width: 30%;
 }
 
 form {
@@ -352,4 +354,23 @@ form {
 
 .buttons a:hover {
   background-color: var(--color-distinct-light);
+}
+
+.label-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+label {
+  font-size: 0.85rem;
+}
+.textarea {
+  display: flex;
+  flex-direction: column;
+}
+
+a.indicator {
+  text-decoration-color: var(--color-distinct);
+  font-weight: 800;
 }
