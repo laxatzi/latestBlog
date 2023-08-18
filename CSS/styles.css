@@ -240,7 +240,6 @@ header menu {
 }
 
 header menu a,
-#logo a,
 footer menu a {
   color: var(--color);
   font-size: 1rem;
@@ -254,7 +253,9 @@ footer menu a {
 }
 
 #logo a {
-  text-decoration-color: var(--color-distinct);
+  color: var(--color);
+  text-decoration: underline 4px var(--color-main-dark);
+  letter-spacing: -0.08em;
   font-weight: 800;
 }
 
@@ -371,6 +372,10 @@ label {
 }
 
 a.indicator {
+  text-decoration-color: var(--color-distinct);
+  font-weight: 800;
+}
+#logo a.indicator {
   text-decoration-color: var(--color-distinct);
   font-weight: 800;
 }
