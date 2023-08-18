@@ -408,3 +408,33 @@ hr {
 .writtenby p {
   font-size: 0.95rem;
 }
+
+.the-post_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tag {
+  padding: 5px 10px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: var(--color);
+  border: 4px solid;
+}
+
+.taglist-parent {
+  display: flex;
+}
+
+.taglist {
+  list-style: none;
+  margin-left: 10px;
+}
+
+.javascript {
+  border-color: var(--color-distinct);
+}
+.react {
+  border-color: #0fa6f7;
+}
