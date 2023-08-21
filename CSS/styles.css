@@ -351,6 +351,21 @@ form {
 .the-project ul {
   padding: 0 20px;
 }
+
+ul {
+  margin: 20px 0;
+}
+ul ul {
+  margin: 5px 0;
+}
+.the-project li {
+  list-style-type: disc;
+}
+
+.the-project li ul li {
+  list-style-type: circle;
+}
+
 .project-title a {
   font-weight: 800;
   font-size: 1rem;
@@ -450,6 +465,9 @@ hr {
   align-items: center;
 }
 
+.contents {
+  margin-top: 50px;
+}
 .tag {
   padding: 1px 3px;
   text-decoration: none;
