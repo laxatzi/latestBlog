@@ -86,6 +86,11 @@ h4 {
   font-size: 1.5rem;
 }
 
+h3.projects,
+h3.posts {
+  font-weight: 800;
+  color: var(--color-main-dark);
+}
 #post-container {
   width: 75%;
 }
@@ -340,18 +345,16 @@ form {
   margin-top: 20px;
 }
 
-.the-post,
-.the-project {
+.the-post {
   margin-top: 100px;
 }
 
-.the-post:first-of-type,
-.the-project:first-of-type {
+.the-post:first-of-type {
   margin-top: 30px;
 }
 
 .the-project {
-  margin-top: 0px;
+  margin-top: 30px;
 }
 
 .the-project ul {
@@ -377,9 +380,9 @@ ul ul {
   font-size: 1rem;
 }
 
-/* .project-desc {
-  font-size: 0.85rem;
-} */
+.project-desc {
+  font-size: 0.95rem;
+}
 
 .buttons a {
   font-size: 0.75rem;
