@@ -122,6 +122,7 @@ a {
   margin: 0;
   font-weight: 500;
   color: var(--color-main-dark);
+  text-decoration-skip-ink: none;
 }
 
 a.button {
