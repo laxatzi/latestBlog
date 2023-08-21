@@ -80,7 +80,8 @@ h4 {
 }
 
 #latest-posts h3 a,
-#posts h3 a {
+#posts h3 a,
+#projects h3 a {
   font-weight: 800;
   font-size: 1.5rem;
 }
