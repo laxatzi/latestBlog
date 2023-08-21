@@ -342,7 +342,7 @@ form {
 
 .the-post,
 .the-project {
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .the-project {
@@ -469,6 +469,7 @@ hr {
 .contents {
   margin-top: 50px;
 }
+
 .tag {
   padding: 1px 3px;
   text-decoration: none;
@@ -478,13 +479,16 @@ hr {
   background-color: var(--color-background-alt);
 }
 
+.tags ul {
+  margin-top: 0;
+}
 .taglist-parent {
   display: flex;
 }
 
 .taglist {
   list-style: none;
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .javascript {
