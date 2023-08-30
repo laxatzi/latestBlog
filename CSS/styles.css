@@ -363,6 +363,8 @@ form {
 
 .the-project {
   margin-top: 30px;
+  background-color: var(--color-background-alt);
+  padding: 10px;
 }
 
 .the-project ul {
