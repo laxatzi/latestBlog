@@ -507,13 +507,6 @@ hr {
   margin-right: 10px;
 }
 
-.javascript {
-  border-color: var(--color-distinct);
-}
-.react {
-  border-color: #0fa6f7;
-}
-
 .contact-info_box {
   margin-top: 40px;
 }
