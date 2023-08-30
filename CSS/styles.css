@@ -320,6 +320,16 @@ footer menu a:last-of-type::after {
   content: "";
 }
 
+#sig {
+  margin-left: 1%;
+  margin-top: 1%;
+}
+
+#sig span {
+  background-color: var(--color-background-alt);
+  color: var(--color-main-dark);
+}
+
 input[type="submit"] {
   background-color: var(--color-distinct);
   color: var(--color);
