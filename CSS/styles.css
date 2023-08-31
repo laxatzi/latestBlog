@@ -428,6 +428,10 @@ ul ul li {
   text-decoration: none;
 }
 
+.buttons {
+  margin: 15px 0;
+}
+
 .contact {
   display: flex;
 }
