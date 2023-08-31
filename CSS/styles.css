@@ -91,9 +91,21 @@ h3.posts {
   font-weight: 800;
   color: var(--color-main-dark);
 }
+
+h3.posts,
+h3.project-title {
+  display: flex;
+  flex-direction: column;
+}
+
+h3.posts small {
+  color: var(--color);
+}
+
 #post-container {
   width: 75%;
 }
+
 p:first-of-type {
   margin-top: 0;
 }
