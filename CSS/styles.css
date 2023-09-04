@@ -446,8 +446,9 @@ ul ul li {
 .contact {
   display: flex;
 }
+
 .message,
-.contact-info {
+.contact-info-section {
   margin: 50px 0;
 }
 
@@ -455,7 +456,7 @@ ul ul li {
   flex: 5;
 }
 
-.contact-info {
+.contact-info-section {
   flex: 4;
 }
 
@@ -552,7 +553,8 @@ hr {
 .contact-info_box {
   margin-top: 40px;
 }
-.contact-info_box p {
+
+.contact-info_box .contact-info {
   margin: 5px;
 }
 
