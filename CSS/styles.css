@@ -189,7 +189,12 @@ section {
   margin: 70px 0;
 }
 
-.intro {
+img.hero {
+  max-height: 200px;
+  margin: 5% 0px 0px 50px;
+}
+
+.intro-heading {
   font-size: 48px;
   font-weight: 800;
 }
