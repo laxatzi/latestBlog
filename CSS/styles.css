@@ -323,16 +323,6 @@ footer menu {
   align-items: center;
 }
 
-footer menu a::after {
-  content: " \B7 ";
-  display: inline-block;
-  margin-left: 15px;
-}
-
-footer menu a:last-of-type::after {
-  content: "";
-}
-
 #sig {
   margin-left: 1%;
   margin-top: 1%;
