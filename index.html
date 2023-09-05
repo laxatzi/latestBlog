@@ -255,5 +255,15 @@
         <div id="loader--dot"></div>
       </div>
     </div>
+
+    <script>
+      document.querySelector("#wrapper").style.display = "none";
+
+      /* Mimicking a server request */
+      setTimeout(function () {
+        document.querySelector("#container-loader").style.display = "none";
+        document.querySelector("#wrapper").style.display = "block";
+      }, 4000);
+    </script>
   </body>
 </html>
