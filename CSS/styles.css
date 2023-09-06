@@ -589,10 +589,10 @@ pre {
 }
 
 #error-message {
-  padding: 15%;
+  padding: 15% 0;
 }
 
 #error-message h1 {
-  font-size: 128px;
+  font-size: 192px;
   font-weight: 900;
 }
