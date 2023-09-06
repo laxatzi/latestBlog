@@ -587,3 +587,12 @@ pre {
   overflow-x: auto;
   padding: 15px;
 }
+
+#error-message {
+  padding: 15%;
+}
+
+#error-message h1 {
+  font-size: 128px;
+  font-weight: 900;
+}
