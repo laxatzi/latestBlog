@@ -643,6 +643,62 @@ pre {
 }
 
 /*------------------------------------------------------------------
+    ^Back to top icon
+-------------------------------------------------------------------*/
+.sr-only {
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.back-to-top {
+  transition: all 0.25s ease-in-out;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2em 2em 0;
+  border-radius: 3px;
+  padding: 0.25em;
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-dist);
+}
+
+.back-to-top:hover,
+.back-to-top:focus {
+  background-color: transparent;
+}
+
+.back-to-top:hover ion-icon#arrow-up {
+  border: 2px solid var(--color-main-dark);
+}
+
+.back-to-top.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.back-to-top.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+ion-icon#arrow-up {
+  color: var(--color-main-dark);
+  background-color: var(--color-dist);
+  font-size: 165%;
+}
+/*
+/*------------------------------------------------------------------
    ^MAX 1200px
 -------------------------------------------------------------------*/
 @media screen and (max-width: 1200px) {
@@ -747,5 +803,11 @@ pre {
 
   main {
     padding: 0;
+  }
+
+  .back-to-top {
+    padding: 0.2em;
+    width: 40px;
+    height: 40px;
   }
 }

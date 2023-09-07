@@ -23,3 +23,17 @@ toggleMenu.addEventListener(
   },
   false
 );
+
+const scrollTopButton = document.getElementById("js--back-to-top");
+
+// Let's set up a function that shows our scroll-to-top button if we scroll beyond the height of the initial window.
+const showScrollButton = function showScrollButtonWhenBeyondWindow() {
+  let scrollY = window.scrollY;
+  if (scrollY > 250) {
+    scrollTopButton.className = "back-to-top show";
+  } else {
+    scrollTopButton.className = "back-to-top hidden";
+  }
+};
+
+window.addEventListener("scroll", showScrollButton);
