@@ -663,4 +663,8 @@ pre {
   h2 {
     font-size: 2rem;
   }
+
+  #error-message {
+    padding: 5%;
+  }
 }
