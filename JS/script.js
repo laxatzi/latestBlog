@@ -1,5 +1,5 @@
 const toggleMenu = document.querySelector(".toggle-menu");
-const nav = document.querySelector(".js--menu");
+const nav = document.querySelector("#js--menu");
 const icon = document.querySelector(".toggle-menu ion-icon");
 
 toggleMenu.addEventListener(
