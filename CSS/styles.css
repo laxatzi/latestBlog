@@ -626,4 +626,18 @@ pre {
   .container {
     width: 100%;
   }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .message,
+  .contact-info-section {
+    margin: 35px 0;
+  }
+
+  .message,
+  .contact-info-section {
+    flex: 1;
+  }
 }
