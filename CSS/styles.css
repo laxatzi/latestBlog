@@ -620,9 +620,12 @@ pre {
 }
 
 /* toggle menu */
+.toggle-menu {
+  margin-top: 20px;
+}
 .toggle-menu ion-icon {
   color: var(--color-main-dark);
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   vertical-align: middle;
   margin: 0;
   display: none;
@@ -710,6 +713,7 @@ pre {
     margin: 5px 0;
     align-items: center;
     justify-content: center;
+    font-size: 1.25rem;
   }
 
   .toggle-menu {
@@ -721,7 +725,7 @@ pre {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.15rem;
+    font-size: 4rem;
     font-weight: bold;
   }
 
@@ -739,5 +743,9 @@ pre {
 
   .close {
     display: none;
+  }
+
+  main {
+    padding: 0;
   }
 }
