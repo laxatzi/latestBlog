@@ -640,4 +640,14 @@ pre {
   .contact-info-section {
     flex: 1;
   }
+
+  #about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #p-wrapper {
+    flex: 100%;
+    margin: 0;
+  }
 }
