@@ -267,14 +267,14 @@ header {
   flex: 50%;
 }
 
-header .nav {
+.nav {
   display: flex;
   flex: 50%;
   justify-content: end;
   align-items: center;
 }
 
-header .nav a,
+.nav a,
 footer .nav a {
   color: var(--color);
   font-size: 1rem;
@@ -282,7 +282,7 @@ footer .nav a {
   padding: 0 10px;
 }
 
-header .nav a,
+.nav a,
 footer .nav a {
   text-decoration-color: var(--color-main-dark);
 }
@@ -298,16 +298,16 @@ footer .nav a {
   outline: 4px solid var(--color-distinct);
 }
 
-header .nav a:hover,
-header .nav a:active,
+.nav a:hover,
+.nav a:active,
 footer .nav a:hover,
 footer .nav a:active,
-header .nav a:focus,
+.nav a:focus,
 footer .nav a:focus {
   text-decoration-color: var(--color-main-light);
 }
 
-header .nav a:focus-visible,
+.nav a:focus-visible,
 footer .nav a:focus-visible {
   outline: 4px solid var(--color-main-light);
 }
@@ -692,9 +692,10 @@ pre {
   header {
     height: auto;
     flex-direction: column;
+    padding-bottom: 0;
   }
 
-  header .nav {
+  .nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -703,7 +704,7 @@ pre {
     width: 100%;
   }
 
-  header .nav a {
+  .nav a {
     display: flex;
     width: 100%;
     margin: 5px 0;
