@@ -589,7 +589,7 @@ pre {
 }
 
 #error-message {
-  padding: 5% 15%;
+  padding: 5% 10%;
 }
 
 #error-message h1 {
@@ -617,4 +617,13 @@ pre {
   vertical-align: sub;
   font-size: 32px;
   color: var(--color-main-dark);
+}
+
+/*------------------------------------------------------------------
+   ^MAX 1200px
+-------------------------------------------------------------------*/
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
 }
