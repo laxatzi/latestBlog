@@ -656,4 +656,11 @@ pre {
    ^MAX 900px
 -------------------------------------------------------------------*/
 @media screen and (max-width: 900px) {
+  .intro-heading {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
 }
