@@ -687,4 +687,33 @@ pre {
   #error-message {
     padding: 5%;
   }
+
+  .toggle-menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .toggle-menu ion-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.15rem;
+    font-weight: bold;
+  }
+
+  .toggle-menu ion-icon.close {
+    display: none;
+  }
+
+  .toggle-menu ion-icon.show {
+    display: flex;
+  }
+
+  .show {
+    display: flex;
+  }
+
+  .close {
+    display: none;
+  }
 }
