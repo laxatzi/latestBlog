@@ -23,7 +23,6 @@ toggleMenu.addEventListener(
   },
   false
 );
-
 const scrollTopButton = document.getElementById("js--back-to-top");
 
 // Let's set up a function that shows our scroll-to-top button if we scroll beyond the height of the initial window.
@@ -35,5 +34,22 @@ const showScrollButton = function showScrollButtonWhenBeyondWindow() {
     scrollTopButton.className = "back-to-top hidden";
   }
 };
-
 window.addEventListener("scroll", showScrollButton);
+
+// smooth scrolling
+const hopLinks = document.querySelectorAll(".hop");
+
+for (const hopLink of hopLinks) {
+  hopLink.addEventListener("click", clickToScrollSmoothly);
+}
+
+function clickToScrollSmoothly(el) {
+  el.preventDefault();
+  const href = this.getAttribute("href");
+  const offsetTop = document.querySelector(href).offsetTop;
+
+  scroll({
+    top: offsetTop,
+    behavior: "smooth",
+  });
+}
