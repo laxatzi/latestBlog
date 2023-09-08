@@ -642,6 +642,19 @@ pre {
   border-radius: 5px;
 }
 
+span.search-trigger {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.search-trigger ion-icon {
+  color: var(--color-main-dark);
+  vertical-align: sub;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.
 /*------------------------------------------------------------------
     ^Back to top icon
 -------------------------------------------------------------------*/
