@@ -698,10 +698,6 @@ ion-icon#arrow-up {
   font-size: 165%;
 }
 
-.search-overlay--active {
-  visibility: visible;
-}
-
 .search-overlay {
   overflow-y: auto;
   overflow-x: hidden;
@@ -712,15 +708,29 @@ ion-icon#arrow-up {
   right: 0;
   bottom: 0;
   background-color: var(--color-background-alt);
-  visibility: hidden;
-  opacity: 0;
+  visibility: visible;
+  opacity: 1;
   transform: scale(1.09);
   transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
   box-sizing: border-box;
 }
-.search-overlay p {
-  padding-top: 15px;
+
+.search-overlay--active {
+  visibility: visible;
 }
+
+.search-overlay .label-form {
+  padding-top: 15px;
+  margin: 100px auto;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-overlay .label-form label {
+  font-size: 2rem;
+}
+
 .search-overlay .event-summary p {
   padding-top: 0;
 }
