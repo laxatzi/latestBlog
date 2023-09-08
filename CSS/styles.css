@@ -234,7 +234,7 @@ a.read_more:active {
 #wrapper {
   width: 55%;
   max-width: 1200px;
-  min-width: 400px;
+  min-width: 435px;
   margin: 0 auto;
   display: block;
 }
@@ -392,7 +392,7 @@ form {
 }
 
 .the-post:first-of-type {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .the-project,
@@ -810,4 +810,10 @@ ion-icon#arrow-up {
     width: 40px;
     height: 40px;
   }
+}
+
+/*------------------------------------------------------------------
+   ^MAX 750px
+-------------------------------------------------------------------*/
+@media screen and (max-width: 750px) {
 }
