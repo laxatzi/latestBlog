@@ -731,24 +731,6 @@ ion-icon#arrow-up {
   font-size: 2rem;
 }
 
-.search-overlay .event-summary p {
-  padding-top: 0;
-}
-.search-overlay .event-summary {
-  margin-bottom: 0;
-  margin-top: 20px;
-}
-body.admin-bar .search-overlay {
-  top: 32px;
-}
-.search-overlay__top {
-  background-color: rgba(0, 0, 0, 0.12);
-}
-.search-overlay__icon {
-  margin-right: 10px;
-  font-size: 1.8rem;
-  color: #f95738;
-}
 /*
 /*------------------------------------------------------------------
    ^MAX 1200px
@@ -862,10 +844,21 @@ body.admin-bar .search-overlay {
     width: 40px;
     height: 40px;
   }
+
+  .search-overlay .label-form {
+    width: 80%;
+  }
+
+  .search-overlay .label-form label {
+    font-size: 1.5rem;
+  }
 }
 
 /*------------------------------------------------------------------
    ^MAX 750px
 -------------------------------------------------------------------*/
 @media screen and (max-width: 750px) {
+  .search-overlay .label-form label {
+    font-size: 1.15rem;
+  }
 }
