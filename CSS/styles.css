@@ -902,8 +902,13 @@ ion-icon#arrow-up {
 /*------------------------------------------------------------------
    ^MAX 550px
 -------------------------------------------------------------------*/
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 550px) {
   .search-overlay .label-form label {
     font-size: 115%;
+  }
+
+  .search-overlay .label-form {
+    width: 90%;
+    margin-right: 20px;
   }
 }
