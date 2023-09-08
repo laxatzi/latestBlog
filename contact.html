@@ -44,16 +44,26 @@
   <body>
     <div id="wrapper">
       <header>
-        <div id="logo"><a href="">Lambros Hatzinikolaou</a></div>
-        <menu>
+        <div id="logo">
+          <a href="" class="indicator">Lambros Hatzinikolaou</a>
+        </div>
+
+        <div
+          class="toggle-menu"
+          id="toggle-menu-button"
+          aria-label="Toggle main menu"
+        >
+          <ion-icon name="menu" class="show"></ion-icon>
+          <ion-icon name="close" class="close"></ion-icon>
+        </div>
+        <menu class="nav" id="js--menu">
           <a href="#about">About</a>
           <a href="#articles">Articles</a>
-          <!-- <a href="#work">Work</a> -->
           <!--
-          <a href="#books">Books</a>
-          <a href="#now">Now</a>
+            <a href="#books">Books</a>
+            <a href="#now">Now</a>
           -->
-          <a href="#contact" class="indicator">Contact</a>
+          <a href="#contact">Contact</a>
         </menu>
       </header>
       <main>
