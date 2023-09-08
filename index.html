@@ -67,7 +67,7 @@
           -->
           <a href="#contact">Contact</a>
           <span class="search-trigger"
-            ><ion-icon size="medium" name="search"></ion-icon
+            ><ion-icon name="search" aria-hidden="true"></ion-icon
           ></span>
         </menu>
       </header>
@@ -264,10 +264,12 @@
           >
         </div>
       </footer>
-      <div class="search-overlay search-overlay--mute">
+      <div class="search-overlay search-overlay--active">
         <div class="label-form">
           <label for="search">Search what you are looking for:</label>
-          <input id="search" type="text" />
+          <div class="input-field">
+            <input id="search" type="text" /><span>&#128270;</span>
+          </div>
         </div>
       </div>
       <a class="back-to-top hidden" href="#" id="js--back-to-top">
