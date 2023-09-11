@@ -777,6 +777,11 @@ ion-icon#arrow-up {
   font-size: 175%;
 }
 
+#no-scroll {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
 /*
 /*------------------------------------------------------------------
    ^MAX 1200px
@@ -905,15 +910,6 @@ ion-icon#arrow-up {
 
   .search-overlay .label-form label {
     font-size: 145%;
-  }
-}
-
-/*------------------------------------------------------------------
-   ^MAX 750px
--------------------------------------------------------------------*/
-@media screen and (max-width: 750px) {
-  .search-overlay .label-form label {
-    font-size: 155%;
   }
 }
 
