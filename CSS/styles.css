@@ -665,6 +665,11 @@ span.search-trigger {
   border-right: none;
 }
 
+.input-field input:focus,
+.input-field input:active {
+  outline: none;
+}
+
 .input-field span {
   flex: 1;
   background: white;
