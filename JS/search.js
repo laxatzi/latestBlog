@@ -9,7 +9,7 @@ const openSearch = function () {
   if (searchOverlay.classList.contains("search-overlay--mute")) {
     searchOverlay.classList.add("search-overlay--active");
     searchOverlay.classList.remove("search-overlay--mute");
-    body.setAttribute("id", "no-scroll");
+    body.classList.add("no-scroll");
   } else return;
 };
 
@@ -17,6 +17,7 @@ const closeSearch = function () {
   if (searchOverlay.classList.contains("search-overlay--active")) {
     searchOverlay.classList.add("search-overlay--mute");
     searchOverlay.classList.remove("search-overlay--active");
+    body.classList.remove("no-scroll");
   } else return;
 };
 

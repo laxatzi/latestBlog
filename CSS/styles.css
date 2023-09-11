@@ -777,7 +777,7 @@ ion-icon#arrow-up {
   font-size: 175%;
 }
 
-#no-scroll {
+.no-scroll {
   overflow-y: hidden;
   overflow-x: hidden;
 }
