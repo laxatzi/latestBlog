@@ -4,6 +4,12 @@ const searchOverlay = document.querySelector(".search-overlay");
 const inputField = document.querySelector("#search");
 const searchGlass = document.querySelector(".input-field span");
 const body = document.querySelector("body");
+let typingTimer;
+const searchResultsDiv = document.querySelector(
+  "#search-overlay--search-results"
+);
+const spinnerDiv = document.querySelector(".spinner-div");
+let typedVal;
 
 const openSearch = function () {
   if (searchOverlay.classList.contains("search-overlay--mute")) {
@@ -21,6 +27,15 @@ const closeSearch = function () {
   } else return;
 };
 
-searchTrigger.addEventListener("click", openSearch);
-closer.addEventListener("click", closeSearch);
-searchGlass.addEventListener("click", () => console.log(inputField.value));
+const keyToOpenSearch = function (ev) {
+  let key = ev.key;
+  if (searchTrigger === document.activeElement && key === "Enter") {
+    openSearch();
+  }
+  if ((key == "s" || key == "S") && ev.altKey) {
+    openSearch();
+  }
+  if (key == "Escape") {
+    closeSearch();
+  }
+};
