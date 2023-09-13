@@ -23,18 +23,30 @@ toggleMenu.addEventListener(
   },
   false
 );
-const scrollTopButton = document.getElementById("js--back-to-top");
+// Get the button
+const topButton = document.querySelector("#top-button");
 
-// Let's set up a function that shows our scroll-to-top button if we scroll beyond the height of the initial window.
-const showScrollButton = function showScrollButtonWhenBeyondWindow() {
-  let scrollY = window.scrollY;
-  if (scrollY > 250) {
-    scrollTopButton.className = "back-to-top show";
-  } else {
-    scrollTopButton.className = "back-to-top hidden";
-  }
+// When the user scrolls down 250px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
 };
-window.addEventListener("scroll", showScrollButton);
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 250 ||
+    document.documentElement.scrollTop > 250
+  ) {
+    topButton.style.display = "block";
+  } else {
+    topButton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 
 // smooth scrolling
 const hopLinks = document.querySelectorAll(".hop");
