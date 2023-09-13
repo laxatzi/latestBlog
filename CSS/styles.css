@@ -642,17 +642,18 @@ pre {
   border-radius: 5px;
 }
 
-span.search-trigger {
-  cursor: pointer;
-  margin-left: 10px;
-}
-
 .search-trigger ion-icon,
 .search-overlay ion-icon {
   color: var(--color-main-dark);
-  vertical-align: sub;
-  font-size: 24px;
+  vertical-align: baseline;
+  font-size: 22px;
   font-weight: 900;
+  margin: 0px;
+  padding: 0px;
+}
+
+.search-trigger {
+  margin-left: 10px;
 }
 
 .input-field {
@@ -796,6 +797,11 @@ span.search-trigger {
 
   .input-field {
     width: 80%;
+  }
+
+  .search-trigger {
+    margin-left: 10px;
+    text-align: center;
   }
 
   .search-overlay .label-form label {
