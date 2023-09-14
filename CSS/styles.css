@@ -746,9 +746,8 @@ pre {
 }
 
 .search-overlay .label-form {
-  padding-top: 15px;
   margin: 100px auto;
-  width: 60%;
+  width: 50%;
   display: flex;
   flex-direction: column;
 }
