@@ -284,7 +284,7 @@ footer .nav a {
   color: var(--color);
   font-size: 1rem;
   text-decoration: underline 4px;
-  padding: 0 10px;
+  padding: 0 5px;
 }
 
 .nav a,
@@ -665,7 +665,7 @@ pre {
 .search-trigger ion-icon,
 .search-overlay ion-icon {
   color: var(--color-main-dark);
-  vertical-align: sub;
+  vertical-align: baseline;
   font-size: 22px;
   font-weight: 900;
   margin: 0px;
