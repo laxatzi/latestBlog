@@ -230,6 +230,7 @@ a.read_more {
 a.read_more:hover,
 a.read_more:active {
   background-color: var(--color-lighter);
+  color: var(--color-background);
 }
 
 #wrapper {
@@ -306,7 +307,9 @@ footer .nav a:hover,
 footer .nav a:active,
 .nav a:focus,
 footer .nav a:focus {
-  text-decoration-color: var(--color-main-light);
+  text-decoration-color: transparent;
+  background-color: var(--color-main-light);
+  color: var(--color-background);
 }
 
 .nav a:focus-visible,
@@ -511,6 +514,10 @@ a.indicator {
 #logo a.indicator {
   text-decoration-color: var(--color-distinct);
   font-weight: 800;
+}
+
+#logo a.indicator:hover {
+  background-color: var(--color-distinct);
 }
 
 .meta {
