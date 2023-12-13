@@ -458,11 +458,11 @@ ul ul li {
   font-size: 0.75rem;
   font-weight: 800;
   padding: 5px 10px;
-  border: 1px solid var(--color);
+  border: 2px solid var(--color);
   background-color: var(--color-background);
   color: var(--color);
   text-decoration: none;
-  box-shadow: 6px 6px 0 0 var(--color-distinct);
+  box-shadow: 3px 3px 0 0 var(--color-distinct);
 }
 
 .buttons {
