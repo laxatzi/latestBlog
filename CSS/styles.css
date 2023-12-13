@@ -312,6 +312,9 @@ footer .nav a:focus-visible {
   outline: 4px solid var(--color-main-light);
 }
 
+img.profile {
+}
+
 footer {
   padding: 30px 0 0 0;
   display: flex;
@@ -499,6 +502,7 @@ hr {
 
 .writtenby {
   display: flex;
+  align-items: center;
 }
 
 .writtenby p {
@@ -509,8 +513,7 @@ hr {
 .writtenby img {
   border-radius: 100%;
   margin-top: 20px;
-  width: 100px;
-  height: 100px;
+  width: 50px;
   flex: 1;
 }
 
