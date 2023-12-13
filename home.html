@@ -1,0 +1,322 @@
+<!-- ©Lambros Hatzinikolaou 2023 -->
+<!DOCTYPE html>
+<html prefix="og: https://lambrosHatzinikolaou.com/ns#>" lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lambros Hatzinikolaou Personal Website</title>
+    <meta name="author" content="Lambros Hatzinikolaou" />
+    <meta
+      name="description"
+      content="A freelance web developer from Thessaloniki, Greece, specializing in building websites for small businesses and professionals"
+    />
+    <link rel="canonical" href="https://lambrosHatzinikolaou.com/" />
+    <meta
+      property="og:title"
+      content="Lambros Hatzinikolaou | Freelance web developer"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.lambrosHatzinikolaou.com" />
+    <meta
+      property="og:image"
+      content="https://www.lambrosHatzinikolaou.com/img/avatar.jpg  "
+    />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      defer
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      defer
+    ></script>
+    <script src="js/search.js" defer></script>
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <button onclick="topFunction()" id="top-button" title="Go to top">
+      &#8593;
+    </button>
+    <div id="wrapper">
+      <header>
+        <div id="logo">
+          <a href="index.html" class="indicator">Lambros Hatzinikolaou</a>
+        </div>
+
+        <div
+          class="toggle-menu"
+          id="toggle-menu-button"
+          aria-label="Toggle main menu"
+        >
+          <ion-icon name="menu" class="show"></ion-icon>
+          <ion-icon name="close" class="close"></ion-icon>
+        </div>
+        <menu class="nav" id="js--menu">
+          <a href="about.html">About</a>
+          <a href="blog.html">Articles</a>
+          <!--
+            <a href="#books">Books</a>
+            <a href="#now">Now</a>
+          -->
+          <a href="contact.html">Contact</a>
+          <div
+            tabindex="0"
+            class="visible search-trigger"
+            aria-description="You can search for your topic of interest either by clicking here or by clicking the keys s + alt"
+          >
+            Search <ion-icon name="search" size="small"></ion-icon>
+          </div>
+        </menu>
+      </header>
+      <main>
+        <div class="container">
+          <section id="hero">
+            <div class="intro-heading-section">
+              <div class="intro-heading-image">
+                <img
+                  class="intro-heading-img"
+                  src="img/aggelikoyla.jpg"
+                  alt=""
+                />
+              </div>
+              <h1 class="intro-heading">Hi, I'm Lambros</h1>
+            </div>
+
+            <p>
+              I'm a web developer in Thessaloniki, Greece. This is my tech blog
+              where
+              <a href="#latest-posts" class="hop"
+                >I write about web development, web design, and my life as a
+                programmer</a
+              >.
+            </p>
+            <p>
+              I try to implement what I've learned so building
+              <a href="#latest-projects" class="hop">a lot of projects</a> is
+              part of the process to enhance my learning.
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur ea iusto cum quidem. Facilis, nihil molestias
+              molestiae libero <a href="">voluptatum tempora</a> temporibus
+              deserunt velit!
+            </p>
+          </section>
+
+          <section id="newsletter">
+            <h2>My Weekly Newsletter about Frontend</h2>
+            <small
+              >Subscribe to my newsletter to get useful tips and the week's
+              selection of articles about frontend technologies every
+              Tuesday.</small
+            >
+            <form action="">
+              <input type="email" placeholder="Email" name="email" />
+              <input type="submit" value="Subscribe" />
+            </form>
+          </section>
+
+          <section id="latest-posts">
+            <h2>My latest posts</h2>
+            <div class="the-post">
+              <div class="the-post_title">
+                <h3 class="posts">
+                  <a href="">Lorem, ipsum dolor</a>
+                  <small>Wednesday August 30, 2023</small>
+                </h3>
+              </div>
+              <div class="tags">
+                <ul class="taglist-parent">
+                  <li class="taglist">
+                    <a class="tag javascript" href=""> #JavaScript</a>
+                  </li>
+                  <li class="taglist">
+                    <a href="" class="tag react">#React</a>
+                  </li>
+                </ul>
+              </div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Laudantium, dolorem. Tempore sed, ad at vel, optio eligendi
+                iusto, atque asperiores saepe provident animi?
+              </p>
+              <a href="" class="read_more">Read More</a>
+            </div>
+            <div class="the-post">
+              <div class="the-post_title">
+                <h3 class="posts">
+                  <a href="">Lorem, ipsum dolor</a>
+                  <small>Wednesday August 30, 2023</small>
+                </h3>
+              </div>
+              <div class="tags">
+                <ul class="taglist-parent">
+                  <li class="taglist">
+                    <a class="tag javascript" href=""> JavaScript</a>
+                  </li>
+                  <li class="taglist">
+                    <a href="" class="tag react">React</a>
+                  </li>
+                </ul>
+              </div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Laudantium, dolorem. Tempore sed, ad at vel, optio eligendi
+                iusto, atque asperiores saepe provident animi?
+              </p>
+              <a href="" class="read_more">Read More</a>
+            </div>
+            <div class="the-post">
+              <div class="the-post_title">
+                <h3 class="posts">
+                  <a href="">Lorem, ipsum dolor</a>
+                  <small>Wednesday August 30, 2023</small>
+                </h3>
+              </div>
+              <div class="tags">
+                <ul class="taglist-parent">
+                  <li class="taglist">
+                    <a class="tag javascript" href=""> JavaScript</a>
+                  </li>
+                  <li class="taglist">
+                    <a href="" class="tag react">React</a>
+                  </li>
+                </ul>
+              </div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Laudantium, dolorem. Tempore sed, ad at vel, optio eligendi
+                iusto, atque asperiores saepe provident animi?
+              </p>
+              <a href="" class="read_more">Read More</a>
+            </div>
+          </section>
+
+          <section id="latest-projects">
+            <div class="heading">
+              <h2>My latest projects</h2>
+              <!-- <a href="" class="read_more">show all</a> -->
+            </div>
+            <div class="the-project">
+              <small>22 3 2022</small>
+              <h3 class="project-title">
+                <a href="">Lorem, ipsum dolor</a>
+                <small>Wednesday August 30, 2023</small>
+              </h3>
+
+              <p class="project-desc">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Laudantium, dolorem. Tempore sed, ad at vel, optio eligendi
+                iusto, atque asperiores saepe provident animi?
+              </p>
+              <div class="buttons">
+                <a href="">project article</a>
+                <a href="">project demo</a>
+              </div>
+            </div>
+            <div class="the-project">
+              <small>22 3 2022</small>
+              <h3 class="project-title">
+                <a href="">Lorem, ipsum dolor</a>
+                <small>Wednesday August 30, 2023</small>
+              </h3>
+              <p class="project-desc">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Laudantium, dolorem. Tempore sed, ad at vel, optio eligendi
+                iusto, atque asperiores saepe provident animi?
+              </p>
+              <div class="buttons">
+                <a href="">project article</a>
+                <a href="">project demo</a>
+              </div>
+            </div>
+            <div class="the-project">
+              <h3 class="project-title">
+                <a href="">Lorem, ipsum dolor</a>
+                <small>Wednesday August 30, 2023</small>
+              </h3>
+              <p class="project-desc">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Laudantium, dolorem. Tempore sed, ad at vel, optio eligendi
+                iusto, atque asperiores saepe provident animi?
+              </p>
+              <div class="buttons">
+                <a href="">project article</a>
+                <a href="">project demo</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer>
+        <menu>
+          <a href="twitter.com">Twitter</a> .
+          <a href="linkedin.com">Linkedin</a> .
+          <a href="youtube.com">YouTube</a> .
+          <a href="privacy.com">Privacy</a> .
+          <a href="terms.com">Terms</a>
+        </menu>
+        <div id="sig">
+          <small
+            >Developed by
+            <span
+              ><a href="https://lambrosHatzinikolaou.com"
+                >Lambros Hatzinikolaou</a
+              ></span
+            >
+            &#169;. Generated by WP</small
+          >
+        </div>
+      </footer>
+      <div class="search-overlay search-overlay--mute">
+        <div class="label-form">
+          <span class="closer">&times;</span>
+          <label for="search">Search what you are looking for:</label>
+          <div class="input-field">
+            <input name="search" id="search" type="search" />
+            <span>&#128270;</span>
+          </div>
+        </div>
+        <div id="wrapper">
+          <div class="spinner-div"></div>
+          <div id="search-overlay--search-results"></div>
+        </div>
+      </div>
+      <a class="back-to-top hidden" href="#" id="js--back-to-top">
+        <ion-icon name="arrow-up-outline" id="arrow-up"></ion-icon>
+        <span class="sr-only">Back to top</span>
+      </a>
+    </div>
+    <div id="container-loader">
+      <div id="loader">
+        <div id="loader--dot"></div>
+        <div id="loader--dot"></div>
+        <div id="loader--dot"></div>
+        <div id="loader--dot"></div>
+        <div id="loader--dot"></div>
+      </div>
+    </div>
+
+    <script>
+      // document.querySelector("#wrapper").style.display = "none";
+      window.onload = function () {
+        document.getElementById("container-loader").style.display = "none";
+      };
+      /* Mimicking a server request */
+      // setTimeout(function () {
+      //   document.querySelector("#container-loader").style.display = "none";
+      //   document.querySelector("#wrapper").style.display = "block";
+      // }, 4000);
+    </script>
+  </body>
+</html>
