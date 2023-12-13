@@ -221,8 +221,9 @@ a.read_more {
   width: 30%;
   text-align: center;
   text-decoration: none;
-  background-color: var(--color-distinct);
+  background-color: var(--color-background);
   border: 4px solid var(--color);
+  box-shadow: 6px 6px 0 0 var(--color-distinct);
   color: var(--color);
 }
 
@@ -238,6 +239,7 @@ a.read_more:active {
   margin: 0 auto;
   display: block;
 }
+
 main {
   display: flex;
   padding: 30px 0;
@@ -279,7 +281,7 @@ footer .nav a {
   color: var(--color);
   font-size: 1rem;
   text-decoration: underline 4px;
-  padding: 0 10px;
+  padding: 0 5px;
 }
 
 .nav a,
@@ -342,8 +344,13 @@ input[type="submit"] {
   padding: 10px;
   border: 4px solid var(--color);
   width: 80%;
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: 800;
+  /* box-shadow: 4px 4px 0 0 var(--color-distinct); */
+}
+
+input[type="email"] {
+  font-size: 0.85rem;
 }
 
 input[type="submit"]:hover {
@@ -354,9 +361,24 @@ input[type="submit"]:hover {
 .intro-heading-section {
   display: flex;
 }
+
 .intro-heading-image {
   width: 85px;
   height: 85px;
+}
+
+.intro-heading-image-2 {
+  width: 85px;
+  height: 85px;
+}
+
+.intro-heading-image-2 {
+  max-width: 70px;
+  max-height: 70px;
+  border: 4px solid var(--color);
+  box-shadow: 6px 6px 0 0 var(--color-distinct);
+  margin-right: 20px;
+  transition: 300ms;
 }
 
 .intro-heading-image img {
@@ -401,8 +423,8 @@ form {
 .the-project,
 #newsletter {
   margin-top: 30px;
-  background-color: var(--color-background-alt);
-  padding: 10px;
+  background-color: #f4f4f4;
+  padding: 20px;
 }
 
 .the-project ul {
@@ -689,6 +711,39 @@ pre {
 .label-form:has(.input-field input:focus) {
   border: 4px solid var(--color-main-dark);
 }
+
+.dot-bg-section-1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 20%;
+  height: 100%;
+  z-index: -1;
+  background: #ffffff;
+  opacity: 0.1;
+  background-image: radial-gradient(
+    #010214 1.4000000000000001px,
+    #ffffff 1.4000000000000001px
+  );
+  background-size: 28px 28px;
+}
+
+.dot-bg-section-2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 40%;
+  height: 100%;
+  z-index: -1;
+  background: #ffffff;
+  opacity: 0.1;
+  background-image: radial-gradient(
+    #010214 1.4000000000000001px,
+    #ffffff 1.4000000000000001px
+  );
+  background-size: 28px 28px;
+}
+
 /*------------------------------------------------------------------
     ^Back to top icon
 -------------------------------------------------------------------*/
@@ -806,34 +861,6 @@ pre {
     text-align: center;
   }
 
-  .search-overlay .label-form label {
-    font-size: 165%;
-  }
-}
-
-/*------------------------------------------------------------------
-   ^MAX 900px
--------------------------------------------------------------------*/
-@media screen and (max-width: 900px) {
-  .intro-heading {
-    font-size: 42px;
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
-
-  #error-message {
-    padding: 5%;
-  }
-
-  /* toggling navigation */
-  header {
-    height: auto;
-    flex-direction: column;
-    padding-bottom: 0;
-  }
-
   .nav {
     flex-direction: column;
     align-items: center;
@@ -846,10 +873,17 @@ pre {
   .nav a {
     display: flex;
     width: 100%;
-    margin: 5px 0;
+    margin: 10px 0;
     align-items: center;
     justify-content: center;
     font-size: 1.25rem;
+  }
+
+  /* toggling navigation */
+  header {
+    height: auto;
+    flex-direction: column;
+    padding-bottom: 0;
   }
 
   .toggle-menu {
@@ -879,6 +913,27 @@ pre {
 
   .close {
     display: none;
+  }
+
+  .search-overlay .label-form label {
+    font-size: 165%;
+  }
+}
+
+/*------------------------------------------------------------------
+   ^MAX 900px
+-------------------------------------------------------------------*/
+@media screen and (max-width: 900px) {
+  .intro-heading {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  #error-message {
+    padding: 5%;
   }
 
   main {
