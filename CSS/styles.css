@@ -284,7 +284,7 @@ footer .nav a {
   color: var(--color);
   font-size: 1rem;
   text-decoration: underline 4px;
-  padding: 0 5px;
+  padding: 0 10px;
 }
 
 .nav a,
@@ -310,7 +310,7 @@ footer .nav a:active,
 .nav a:focus,
 footer .nav a:focus {
   text-decoration-color: transparent;
-  background-color: var(--color-main-light);
+  background-color: var(--color-main-dark);
   color: var(--color-background);
 }
 
@@ -665,7 +665,7 @@ pre {
 .search-trigger ion-icon,
 .search-overlay ion-icon {
   color: var(--color-main-dark);
-  vertical-align: baseline;
+  vertical-align: sub;
   font-size: 22px;
   font-weight: 900;
   margin: 0px;
@@ -674,6 +674,10 @@ pre {
 
 .search-trigger {
   margin-left: 10px;
+}
+
+.search-trigger:hover {
+  background-color: var(--color-distinct);
 }
 
 .input-field {
